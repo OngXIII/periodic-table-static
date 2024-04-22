@@ -1,0 +1,234 @@
+* {
+    font-family: Montserrat, 'Times New Roman';
+}
+
+
+body {
+    background-image: url(../hexagonal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 1000px;
+    color: wheat;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: antiquewhite;
+}
+
+a:hover {
+    color: aqua;
+}
+
+table{
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    border: 1px solid black;
+    transition: all 0.2s;
+}
+
+.container,
+.blank{
+    position: relative; /* Make the container a positioning context for its children */
+    box-sizing: border-box;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+    margin: 3px;
+}
+
+.container:hover {
+    box-sizing: content-box;
+    border: 5px solid wheat;
+}
+
+.number {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-size: 10px;
+    color: white;
+}
+
+.mass {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 8px;
+    color: white;
+}
+
+.symbol {
+    position: absolute;
+    top: 50%; /* Place the text at 50% from the top of the cell */
+    left: 50%; /* Place the text at 50% from the left of the cell */
+    transform: translate(-50%, -50%); /* Move the text back by half of its own width and height */
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.name {
+    position: absolute;
+    bottom: 3px; /* Place the text 3px from the bottom of the cell */
+    left: 50%; /* Place the text at 50% from the left of the cell */
+    transform: translateX(-50%); /* Move the text horizontally back by half of its own width */
+    font-size: 10px;
+    color: white;
+}
+
+.inner-transition {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: white;
+}
+
+.container.extend-lan {
+    border: none;
+    padding: 0;
+}
+
+.container.extend-act {
+    border: none;
+    padding: 0;
+}
+
+.container.space {
+    width: 1440px;
+    height: 40px;
+    border: none;
+}
+
+.alkali {
+    background-color: rgb(83, 26, 26);
+}
+
+.alkali-earth {
+    background-color: rgb(84, 57, 47);
+}
+
+.transition {
+    background-color: rgb(193, 106, 0);
+}
+
+.post-transition {
+    background-color: rgb(23, 139, 100);
+}
+
+.non-metal {
+    background-color: rgb(38, 64, 192);
+}
+
+.metalloid {
+    background-color: rgb(0, 140, 158);
+}
+
+.halogen {
+    background-color: rgb(107, 55, 211);
+}
+
+.noble-gas {
+    background-color: rgb(104, 32, 171);
+}
+
+.lanthanide {
+    background-color: rgb(0, 142, 21);
+}
+
+.actinide {
+    background-color: rgb(110, 163, 31);
+}
+
+.element-groups {
+    text-align: center;
+}
+
+li.group {
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 200px;
+    height: 80px;
+    margin: 10px;
+    border: 1px solid white;
+    color: white;
+    line-height: 78px; /* Set line height equal to the height of the box */
+    text-align: center; /* Center text horizontally */
+    vertical-align: middle; /* Center text vertically */
+}
+
+.solid {
+    color: white;
+}
+
+.liquid {
+    color: aquamarine;
+}
+
+.gas {
+    color: red;
+}
+
+.unknown {
+    color: rgb(124, 93, 93);
+}
+
+.table-container {
+    position: relative;
+}
+
+.standard-state {
+    position:absolute;
+    top: 4%;
+    left: 28%;    
+    text-align: center;
+}
+
+.standard-state ul{
+    padding: 0%;
+}
+
+
+li.state {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    line-height: 90px; /* Set line height equal to the height of the box */
+    text-align: center; /* Center text horizontally */
+    vertical-align: middle; /* Center text vertically */
+}
+
+li.state.solid {
+    border: 5px solid white;
+}
+
+li.state.liquid {
+    border: 5px solid aquamarine;
+}
+
+li.state.gas {
+    border: 5px solid red;
+}
+
+li.state.unknown {
+    border: 5px solid rgb(124, 93, 93);
+}
